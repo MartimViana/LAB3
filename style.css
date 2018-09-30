@@ -16,8 +16,11 @@ body
 	color: white;
 	font-family: Courier;	/* default text */
 	/* IMAGE */
-	background-image: url("log-background.jpg");
+	background-image: url("res/main-background.jpg");
 	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: center top;
+	width: 100%;
 	/* background-position: center; */
 }
 /*  FONTS */
@@ -40,6 +43,10 @@ label {
 	background: none;
 	border-color: grey;
 }
+.icon {
+	height: 40px;
+	width: 40px;
+}
 .mainTab {
 	height:5%
 }
@@ -57,8 +64,8 @@ label {
 .blogPost 
 {
 	/* Border */
-	border-style: dotted;
-	border-color: darkgreen;
+	border-style: solid;
+	border-color:  #1a5276;
 	width: 80;
 	/* Text */
 	text-align: left;
