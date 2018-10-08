@@ -1,54 +1,65 @@
 <!DOCTYPE html>
-<!-- 
-	_AUTHOR_ = Martim Viana, 57667
-
-	This is a test login page
--->
-
-<!-- P A G E  S C H E M E -->
-
-
-
-
 <html>
-	<head>
-		<!-- loading the css style file -->
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<!--
-			The main tab, which facilitates the navigation
-			in the website.
-		-->
-		<div id= "mainTab" class="mainTab">
-			<a class="button" href="index_template.html">Home</a>
-			<a class="button" href="login_template.html">Login</a>
-			<a class="button" href="register_template.html">Register</a>
-		</div>
-		<div class="title">
-			<h>REGISTER</h>
-		</div>
-		<!-- REGISTER FORMULARY -->
-		<div class="login">
-			<form class="login">
-					<!-- Username -->
-					<label>User</label><br>
-					<input type="text" name="username">
-					<br><br>
+<head>
+	<!-- Use the bootstrap as design reference -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Volca-register</title>
+</head>
+<body>
+		<!-- MAIN NAVIGATION TAB -->
+		<nav class="navbar navbar-default">
+			<!--
+				The main navigation tab is composed of two lists with links attached to them. One on the left, one on the right.
+			-->
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<!-- Home button -->
+					<li><a href="index_template.html">Home</a></li>
 
+					<!-- Login button -->
+					<li><a href="login_template.html">Login</a></li>
+
+					<!-- Register button -->
+					<li class="active"><a href="register_template.html">Register</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<!-- post blog button -->
+					<li href="#"><a> post blog</a></li>
+
+					<!-- Username label-->		
+					<li><a class="navbar-brand">Username</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- PAGE IDENTIFIER -->
+		<div class="container">
+			<h1 style="text-align: center;">REGISTER</h1>
+		</div>
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label for="usr">Name:</label>
+					<input type="text" class="form-control" name="name" id="name">
+				</div>
+				<div class="form-group">
+					<!-- Email -->
+					<label for="usr">Email:</label>
+					<input type="text" class="form-control" name="email" id="email">
+				</div>
+				<div class="form-group">
 					<!-- Password -->
-					<label>Password</label><br>
-					<input type="text" name="password">
-					<br><br>
-					
-					<!-- Password confirmation -->
-					<label>Password Confirmation</label><br>
-					<input type="text" name="passwordConfirmation">
-					<br><br>
-					
-					<button>Register</button>
-
+					<label for="pwd">Password:</label>
+					<input type="Password" class="form-control" name="Password" id="Password">
+				</div>
+				<div class="form-group">
+					<!-- Password -->
+					<label for="pwd">Password confirmation:</label>
+					<input type="Password" class="form-control" name="Password" id="Password">
+				</div>
 			</form>
 		</div>
 	</body>
+</body>
 </html>
